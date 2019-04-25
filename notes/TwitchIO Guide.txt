@@ -1,0 +1,19 @@
+/// Initialization
+1) Open script "twitch_config"
+	- Replace "global.channel"
+	- Replace "global.botname"
+	- Replace "global.oauth"
+		- If you don't have an OAUTH token, get it here: https://twitchapps.com/tmi/
+		-  Make sure you're logged into the bot account when getting the OAUTH token
+	  
+/// Adding Commands
+1) Open script "twitch_commands"
+	- Add case for the command string you want to react to (without prefix!)
+		- You can make a case call, create and destroy objects or scripts for easy command management
+		
+/// Settings
+- The following variables can be changed in the script "twitch_config":
+	- prefix			(This is the prefix to trigger a command from chat)
+	- max_messages		(Max amount of message to store in a DS list, in case you want to use it)
+	- max_responses		(Max amount of responses to store in a DS list which is going to be responded to)
+	- response_timeout	(Seconds between each response, this is done to prevent the bot from getting banned)
